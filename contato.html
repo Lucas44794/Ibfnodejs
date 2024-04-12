@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="remove.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IBF</title>
+</head>
+<body>
+    <header>
+        <h2>Seja Bem-vindo</h2>
+        <h1>Instituto Biblico Fé</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="#cursos">Cursos</a> |
+        <a href="contato.html">Contato</a> |
+        <a href="#cursos">Nossos Cursos</a> |
+        <a href="#historia">Nossa História</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <main>
+        <section id="contato">
+            <h2>Contato</h2>
+            <!-- Aqui você pode adicionar os dados de contato da empresa, como endereço, telefone, email, redes sociais, etc. -->
+            <p>Endereço: Rua Humberto Mattarazzo, 2345 </p>
+            <p>Distrito Industrial, Santa Bárbara d'Oeste/SP</p>
+            <p>Telefone / WhatsApp: (19) 99168-6675</p>
+            <p>Facebook: facebook.com/</p>
+            <p>Instagram: instagram.com/</p>
+            <!-- Você também pode adicionar um formulário para que os visitantes possam enviar mensagens para a empresa. -->
+            <form id="contatoForm" action="/contato" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail Aqui"><br>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" id="assunto" name="assunto" placeholder="Elogio / Reclamação / Duvida"><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite aqui seu texto a ser enviado"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Instituto Biblico Fé</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    background-image: url('1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #007BFF;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: black;
+    padding: 3px;
+    color: white;
+    margin-top: 10px; /* Adiciona um pequeno espaço acima do botão */
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(0, 162, 255); /* Cor de fundo quando o mouse passa por cima */
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #007BFF;
+}
+
+#login {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#video {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Consulta de mídia para dispositivos com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    header, nav, main, form, footer {
+        margin: 0;
+        padding: 10px;
+    }
+    #login {
+        height: auto;
+        padding: 20px;
+    }
+}
+.texto123 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

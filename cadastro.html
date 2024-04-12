@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="remove.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IBF</title>
+</head>
+<body>
+    <header>
+        <h2>Seja Bem-vindo</h2>
+        <h1>Instituto Biblico Fé</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="#cursos">Cursos</a> |
+        <a href="contato.html">Contato</a> |
+        <a href="#cursos">Nossos Cursos</a> |
+        <a href="#historia">Nossa História</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <main>
+        <section id="cadastro">
+            <h2 class="h2cadastro">Cadastro</h2>
+            <form class="cadastroFormPersonalizado" action="/criarUsuario" method="post">
+                <div class="cadform">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp">
+                </div>
+                <br>
+                <div class="cadform">
+                    <label for="data_cadastro">Data de Cadastro:</label>
+                    <input type="date" id="data_cadastro" name="data_cadastro">
+                </div>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Instituto Biblico Fé</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var data = new Date();
+            var dia = String(data.getDate()).padStart(2, '0');
+            var mes = String(data.getMonth() + 1).padStart(2, '0'); //Os meses em JavaScript começam do 0
+            var ano = data.getFullYear();
+
+            dataAtual = ano + '-' + mes + '-' + dia;
+
+            document.getElementById('data_cadastro').value = dataAtual;
+        });
+    </script>
+</body>
+</html>

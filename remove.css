@@ -1,0 +1,19 @@
+/* CSS de redefinição */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* Adicione estilos específicos do elemento aqui */
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+/* etc... */
